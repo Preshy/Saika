@@ -18,7 +18,8 @@ Because I wanted to create a goddamn micro framework! -_-
 There isn't anything to learn! Saika ain't a real framework. It's a skeleton app. You could start using it if you know PHP.
 
 ##### Okay Okay! Calm down!! What about the features?
-The features of Saika are:
+
+###Features
 
 1. MVC Pattern
 2. SEO Friendly URLs with smart hyphens to underscore
@@ -44,6 +45,10 @@ Saika is my sister's name <3
 
 Still got questions? Just checkout the [documentation](https://mirazmac.github.io/Saika/ "").
 
+### Install via composer
+```bash
+composer create-project mirazmac/saika saika
+```
 ### Todos
 * @todo Add namespace support
 * @todo Implement tests
