@@ -1,0 +1,279 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Welcome to Saika\n\n\nSaika is a micro PHP framework specially built for PHP kids. A barebone PHP MVC prototype that allows PHP newbies to code much faster. Saika uses the modern MVC ( Model - View - Controller ) architecture. Saika has some tiny little but extremely useful libraries to get things done easily.\n\n\nNOTE: It is extremely for newbies if you're a supreme PHP coder or PHP lord you may leave.\n\n\nWho is Saika For?\n\n\nYou should only use Saika if:\n\n\n\n\nYou are a PHP newbie, know little about OOP.\n\n\nYou fear to learn frameworks provided by the BIG BROTHERS.\n\n\nYou need knowledge about MVC architecture in PHP.\n\n\nYou want to create small sites and quick prototypes.\n\n\nYou need clean SEO friendly URLS.\n\n\nYou need a framework with a simple and clean code base.\n\n\nYou need a framework that doesn't require mastering itself.\n\n\nYou need a framework that doesn't force any strict coding rules.\n\n\nYou don't want to be forced to use the command line or templating engines.\n\n\nYou need a framework that your girlfriend likes! ( I mean seriously! Saika is that much simple even your girlfriend will love Saika! )", 
+            "title": "Welcome to Saika"
+        }, 
+        {
+            "location": "/#welcome-to-saika", 
+            "text": "Saika is a micro PHP framework specially built for PHP kids. A barebone PHP MVC prototype that allows PHP newbies to code much faster. Saika uses the modern MVC ( Model - View - Controller ) architecture. Saika has some tiny little but extremely useful libraries to get things done easily.  NOTE: It is extremely for newbies if you're a supreme PHP coder or PHP lord you may leave.", 
+            "title": "Welcome to Saika"
+        }, 
+        {
+            "location": "/#who-is-saika-for", 
+            "text": "You should only use Saika if:   You are a PHP newbie, know little about OOP.  You fear to learn frameworks provided by the BIG BROTHERS.  You need knowledge about MVC architecture in PHP.  You want to create small sites and quick prototypes.  You need clean SEO friendly URLS.  You need a framework with a simple and clean code base.  You need a framework that doesn't require mastering itself.  You need a framework that doesn't force any strict coding rules.  You don't want to be forced to use the command line or templating engines.  You need a framework that your girlfriend likes! ( I mean seriously! Saika is that much simple even your girlfriend will love Saika! )", 
+            "title": "Who is Saika For?"
+        }, 
+        {
+            "location": "/getting-started/", 
+            "text": "Requirements\n\n\nFrom giant dedicated servers to shared hosting, Saika will run smoothly with only these: \n\n\n\n\nPHP 5.4 or newer\n\n\nPDO\n\n\nApache server with \nmod_rewrite\n enabled\n\n\n\n\nDownloading Saika\n\n\nSaika is hosted at Github. You can download all versions of it from the \nGitHub Repository\n\n\nInstalling Saika\n\n\n\n\nExtract the package.\n\n\nUpload the Saika folders and files to your server. Normally the index.php file will be at your root.\n\n\nOpen the \napp/config/Saika.config.php\n file with a text editor and make changes according to your needs. For a detail description of the configuration file please see the \nAbout Config File\n page.\n\n\n\n\nThat's it! Saika is ready to use.", 
+            "title": "Installation Instruction"
+        }, 
+        {
+            "location": "/getting-started/#requirements", 
+            "text": "From giant dedicated servers to shared hosting, Saika will run smoothly with only these:    PHP 5.4 or newer  PDO  Apache server with  mod_rewrite  enabled", 
+            "title": "Requirements"
+        }, 
+        {
+            "location": "/getting-started/#downloading-saika", 
+            "text": "Saika is hosted at Github. You can download all versions of it from the  GitHub Repository", 
+            "title": "Downloading Saika"
+        }, 
+        {
+            "location": "/getting-started/#installing-saika", 
+            "text": "Extract the package.  Upload the Saika folders and files to your server. Normally the index.php file will be at your root.  Open the  app/config/Saika.config.php  file with a text editor and make changes according to your needs. For a detail description of the configuration file please see the  About Config File  page.   That's it! Saika is ready to use.", 
+            "title": "Installing Saika"
+        }, 
+        {
+            "location": "/getting-started/config/", 
+            "text": "Configuring Saika\n\n\nBasic Configuration\n\n\n$_config['URL']\n Full URL of your site. \nMUST\n end with a trailing slash ( / ) Ex. https://example.com/\n\n\n$_config['CHARSET']\n Set the internal character set\n\n\n$_config['TIMEZONE']\n Set the server timezone. Set it to FALSE to use default server timezone.\n\n\nDatabase Configuration\n\n\n$_config['DB_TYPE']\n Database Type, currently mysql or sqlite is   currently                                               supported.\n\n\n$_config['DB_HOST']\n Database Host, usally localhost/127.0.0.1\n\n\n$_config['DB_NAME']\n  Database name. ( \nException: For SQLite database, it should be absolute path to the database file\n )\n\n\n$_config['DB_USER']\n Database username.\n\n\n$_config['DB_PASS']\n Database user password.\n\n\n$_config['DB_PORT']\n Database server port. Usually 3306. Better check it from phpinfo()\n\n\n$_config['DB_CHARSET']\n Database Character set, utf8 is highly recommended!\n\n\nController Related Configuration\n\n\n$_config['DEFAULT_CONTROLLER']\n Name of the default controller\n\n\n$_config['DEFAULT_ACTION']\n Name of the default action.\n\n\n$_config['ERROR_CONTROLLER']\n Name of the error controller\n\n\n$_config['TRANSLATE_HYPHENS']\n Translate hyphens in URL action names to underscore. ( true is HIGHLY RECOMMENDED )\n\n\nConfiguration for Cookies\n\n\n$_config['COOKIE_PATH']\n is the path the cookie is valid on, usually \"/\" to make it valid on the whole domain.\n\n\n$_config['COOKIE_DOMAIN']\n The domain where the cookie is valid for. Usually this does not work with \"localhost\", \".localhost\", \"127.0.0.1\", or \".127.0.0.1\". If so, leave it as empty string, false or null. When using real domains \nMAKE SURE\n you have a dot (.) in front of the domain, like \".example.com\".\n\n\n$_config['COOKIE_SECURE']\n If the cookie will be transferred through secured connection(SSL). It's highly recommended to set it to true if you have SSL.\n\n\n$_config['COOKIE_HTTPONLY']\n If set to true, Cookies can't be accessed by JS - Highly recommended!\n\n\n$_config['COOKIE_LIFETIME']\n Default lifetime of cookie, 7 days is default\n\n\n$_config['SESSION_LIFETIME']\n How long should a session cookie be valid by seconds,  0 = till the browser is closed.\n\n\n$_config['SESSION_SAVE_PATH']\n Specify where the sessions will be saved ( set false to use default )\n\n\nAutoload related Configuration\n\n\nCurrently only supports helpers. All other classes, models and libraries are autoloaded via Composer. See \nhttp://getcomposer.org\n . If you don't about helpers yet, don't worry we will discuss about it later on this docs.\n\n\n$_config['AUTOLOAD_HELPERS']\n Name of Helper files without extension (.php) as array. Ex. \n['DemoHelper', 'UrlHelpers']\n . Helpers are located in \napp/helpers/\n\n\nEncryption Keys\n\n\n$_config['ENCRYPTION_KEY']\n and \n$_config['HMAC_SALT']\n will be used by the Encryption class to entrypt and decrypt.\n\n\nConfiguration for Captcha Class\n\n\n$_config['CAPTCHA_FONT']\n Path to the captcha font\n\n\n$_config['CAPTCHA_WIDTH']\n Width of the captcha image\n\n\n$_config['CAPTCHA_HEIGHT']\n Height of the captcha image\n\n\n$_config['CAPTCHA_FONT_SIZE']\n Captcha font size. Adjust based on height and width.\n\n\n$_config['CAPTCHA_LENGTH']\n The captcha length.\n\n\n$_config['CAPTCHA_CASE_SENSITIVE']\n Whether the captcha is case sensitive or not\n\n\nMisc. Configuration\n\n\n$_config['CACHE_DIR']\n Specify the cache location. Must end with a trailing slash. Will be used by the FileCache Class\n\n\n$_config['CSRF_TOKEN_LIFETIME']\n The CSRF token expiration time in seconds.", 
+            "title": "About the Config File"
+        }, 
+        {
+            "location": "/getting-started/config/#configuring-saika", 
+            "text": "", 
+            "title": "Configuring Saika"
+        }, 
+        {
+            "location": "/getting-started/config/#basic-configuration", 
+            "text": "$_config['URL']  Full URL of your site.  MUST  end with a trailing slash ( / ) Ex. https://example.com/  $_config['CHARSET']  Set the internal character set  $_config['TIMEZONE']  Set the server timezone. Set it to FALSE to use default server timezone.", 
+            "title": "Basic Configuration"
+        }, 
+        {
+            "location": "/getting-started/config/#database-configuration", 
+            "text": "$_config['DB_TYPE']  Database Type, currently mysql or sqlite is   currently                                               supported.  $_config['DB_HOST']  Database Host, usally localhost/127.0.0.1  $_config['DB_NAME']   Database name. (  Exception: For SQLite database, it should be absolute path to the database file  )  $_config['DB_USER']  Database username.  $_config['DB_PASS']  Database user password.  $_config['DB_PORT']  Database server port. Usually 3306. Better check it from phpinfo()  $_config['DB_CHARSET']  Database Character set, utf8 is highly recommended!", 
+            "title": "Database Configuration"
+        }, 
+        {
+            "location": "/getting-started/config/#controller-related-configuration", 
+            "text": "$_config['DEFAULT_CONTROLLER']  Name of the default controller  $_config['DEFAULT_ACTION']  Name of the default action.  $_config['ERROR_CONTROLLER']  Name of the error controller  $_config['TRANSLATE_HYPHENS']  Translate hyphens in URL action names to underscore. ( true is HIGHLY RECOMMENDED )", 
+            "title": "Controller Related Configuration"
+        }, 
+        {
+            "location": "/getting-started/config/#configuration-for-cookies", 
+            "text": "$_config['COOKIE_PATH']  is the path the cookie is valid on, usually \"/\" to make it valid on the whole domain.  $_config['COOKIE_DOMAIN']  The domain where the cookie is valid for. Usually this does not work with \"localhost\", \".localhost\", \"127.0.0.1\", or \".127.0.0.1\". If so, leave it as empty string, false or null. When using real domains  MAKE SURE  you have a dot (.) in front of the domain, like \".example.com\".  $_config['COOKIE_SECURE']  If the cookie will be transferred through secured connection(SSL). It's highly recommended to set it to true if you have SSL.  $_config['COOKIE_HTTPONLY']  If set to true, Cookies can't be accessed by JS - Highly recommended!  $_config['COOKIE_LIFETIME']  Default lifetime of cookie, 7 days is default  $_config['SESSION_LIFETIME']  How long should a session cookie be valid by seconds,  0 = till the browser is closed.  $_config['SESSION_SAVE_PATH']  Specify where the sessions will be saved ( set false to use default )", 
+            "title": "Configuration for Cookies"
+        }, 
+        {
+            "location": "/getting-started/config/#autoload-related-configuration", 
+            "text": "Currently only supports helpers. All other classes, models and libraries are autoloaded via Composer. See  http://getcomposer.org  . If you don't about helpers yet, don't worry we will discuss about it later on this docs.  $_config['AUTOLOAD_HELPERS']  Name of Helper files without extension (.php) as array. Ex.  ['DemoHelper', 'UrlHelpers']  . Helpers are located in  app/helpers/", 
+            "title": "Autoload related Configuration"
+        }, 
+        {
+            "location": "/getting-started/config/#encryption-keys", 
+            "text": "$_config['ENCRYPTION_KEY']  and  $_config['HMAC_SALT']  will be used by the Encryption class to entrypt and decrypt.", 
+            "title": "Encryption Keys"
+        }, 
+        {
+            "location": "/getting-started/config/#configuration-for-captcha-class", 
+            "text": "$_config['CAPTCHA_FONT']  Path to the captcha font  $_config['CAPTCHA_WIDTH']  Width of the captcha image  $_config['CAPTCHA_HEIGHT']  Height of the captcha image  $_config['CAPTCHA_FONT_SIZE']  Captcha font size. Adjust based on height and width.  $_config['CAPTCHA_LENGTH']  The captcha length.  $_config['CAPTCHA_CASE_SENSITIVE']  Whether the captcha is case sensitive or not", 
+            "title": "Configuration for Captcha Class"
+        }, 
+        {
+            "location": "/getting-started/config/#misc-configuration", 
+            "text": "$_config['CACHE_DIR']  Specify the cache location. Must end with a trailing slash. Will be used by the FileCache Class  $_config['CSRF_TOKEN_LIFETIME']  The CSRF token expiration time in seconds.", 
+            "title": "Misc. Configuration"
+        }, 
+        {
+            "location": "/getting-started/how-saika-works/", 
+            "text": "Warning\n\n\nIn this document, we assume you are a PHP newbie. The way this\ndocument describe Saika may offend you if you are a PHP expert.\n\n\n\n\nThe Old Days\n\n\nRemember the old days when you used to create PHP files for each and every page? Then rewriting the URLs? Also, including libraries and other codes on them again and again... and again. Well, if you do remember, just forget it and move on with Saika.\n\n\nThe URL Structure\n\n\n\n\nhttp://example.com/\ncontroller_slug\n/\naction\n/\nargument\n\n\n\n\n\n\nSaika's URL-path translates directly to the controllers. Controllers need to be placed in \napp/controllers\n directory. Controllers are an extended class of Saika's core Controller class.  You can learn more about it in the class reference section.\n\n\nLet's see a quick example.\n\n\nhttp://example.com/videos\n\n\nNow, whenever you request this URL. Saika will look for a controller named \"\nVideos\nController.php\" in \napp/controllers/\n folder and will call the \nindex()\n method. \n\n\n\n\nNote\n\n\nLook at the controller file name, it took \"videos\" as the controller slug\nand  looked for a file named \"VideosController.php\". That's because Saika\nfollows the PSR standard for naming.\n\n\n\n\nNow let's take a look at another example.\n\n\nhttp://example.com/videos/latest\n\n\nFor this request, Saika will look for the method named \nlatest()\n in controller class \nVideosController.php\n and call it.\n\n\nNext, let's see how to pass arguments. This time the URL is:\n\n\nhttp://example.com/videos/view/123\n\n\nAs you may have  guessed, like previous examples, for this URL Saika will call the method named \nview()\n and pass \n123\n as a parameter to it.\n\n\nYou can also pass multiple arguments at the same way. \n\n\nhttp://example.com/videos/check/123/Lorem-Ipsum-Dolor\n\n\nBut what about the homepage then? That's where the \ndefault controller configuration\n comes handy! By default \n$_config['DEFAULT_CONTROLLER']\n is set to \nindex\n. That means for the homepage Saika will call \nindex()\n method of the \"\nIndex\nController.php\" file.\n\n\n\n\nTip\n\n\nYou can change the default controller and method call via \nconfiguration\n.\n\n\n\n\nNow, let's look at the code of the Controller.\n\n\n?php\n\n\nclass\n \nVideosController\n \nextends\n \nController\n\n\n{\n\n    \n/**\n\n\n     * Construct this object by extending the base Controller class\n\n\n     */\n\n    \npublic\n \nfunction\n \n__construct\n()\n\n    \n{\n\n        \nparent\n::\n__construct\n();\n\n    \n}\n\n\n    \npublic\n \nfunction\n \nlatest\n()\n\n    \n{\n\n        \necho\n \nThis is the latest video page.\n;\n\n    \n}\n\n\n    \npublic\n \nfunction\n \nview\n(\n$id\n)\n\n    \n{\n\n        \necho\n \nYou asked for video ID\n \n.\n \n(\nint\n)\n$id\n;\n\n    \n}\n\n\n    \npublic\n \nfunction\n \ncheck\n(\n$id\n,\n \n$name\n)\n\n    \n{\n\n\n    \n}\n\n\n\n}\n\n\n\n\n\n\nAutoloading\n\n\nSaika uses composer ( see \nhttp://getcomposer.org\n ) to autoload stuffs. So, if you follow PSR-4 naming standards; your models and other libraries will be autoloaded as soon as you call them.", 
+            "title": "How Saika Works"
+        }, 
+        {
+            "location": "/getting-started/how-saika-works/#the-old-days", 
+            "text": "Remember the old days when you used to create PHP files for each and every page? Then rewriting the URLs? Also, including libraries and other codes on them again and again... and again. Well, if you do remember, just forget it and move on with Saika.", 
+            "title": "The Old Days"
+        }, 
+        {
+            "location": "/getting-started/how-saika-works/#the-url-structure", 
+            "text": "http://example.com/ controller_slug / action / argument   Saika's URL-path translates directly to the controllers. Controllers need to be placed in  app/controllers  directory. Controllers are an extended class of Saika's core Controller class.  You can learn more about it in the class reference section.  Let's see a quick example.  http://example.com/videos  Now, whenever you request this URL. Saika will look for a controller named \" Videos Controller.php\" in  app/controllers/  folder and will call the  index()  method.    Note  Look at the controller file name, it took \"videos\" as the controller slug\nand  looked for a file named \"VideosController.php\". That's because Saika\nfollows the PSR standard for naming.   Now let's take a look at another example.  http://example.com/videos/latest  For this request, Saika will look for the method named  latest()  in controller class  VideosController.php  and call it.  Next, let's see how to pass arguments. This time the URL is:  http://example.com/videos/view/123  As you may have  guessed, like previous examples, for this URL Saika will call the method named  view()  and pass  123  as a parameter to it.  You can also pass multiple arguments at the same way.   http://example.com/videos/check/123/Lorem-Ipsum-Dolor  But what about the homepage then? That's where the  default controller configuration  comes handy! By default  $_config['DEFAULT_CONTROLLER']  is set to  index . That means for the homepage Saika will call  index()  method of the \" Index Controller.php\" file.   Tip  You can change the default controller and method call via  configuration .   Now, let's look at the code of the Controller.  ?php  class   VideosController   extends   Controller  { \n     /**       * Construct this object by extending the base Controller class       */ \n     public   function   __construct () \n     { \n         parent :: __construct (); \n     } \n\n     public   function   latest () \n     { \n         echo   This is the latest video page. ; \n     } \n\n     public   function   view ( $id ) \n     { \n         echo   You asked for video ID   .   ( int ) $id ; \n     } \n\n     public   function   check ( $id ,   $name ) \n     { \n\n     }  }", 
+            "title": "The URL Structure"
+        }, 
+        {
+            "location": "/getting-started/how-saika-works/#autoloading", 
+            "text": "Saika uses composer ( see  http://getcomposer.org  ) to autoload stuffs. So, if you follow PSR-4 naming standards; your models and other libraries will be autoloaded as soon as you call them.", 
+            "title": "Autoloading"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/", 
+            "text": "Saika has some reserved constants. You can use them across the framework. You may also change some of their values. Saika's core constants are defined in the \nindex.php\n file.\n\n\nENVIRONMENT\n\n\nApplication Environment\n\n\nAccepted values: production, testing and development\n\n\nSAIKA_VERSION\n\n\nThe framework version\n\n\nROOT\n\n\nAbsolute Path to the framework root, with directory separator at end\n\n\nSYSTEM\n\n\nAbsolute Path to the System Directory, with directory separator at end\n\n\nAPP\n\n\nAbsolute Path to the Application Directory, with directory separator at end", 
+            "title": "Reserved Constants"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/#environment", 
+            "text": "Application Environment  Accepted values: production, testing and development", 
+            "title": "ENVIRONMENT"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/#saika_version", 
+            "text": "The framework version", 
+            "title": "SAIKA_VERSION"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/#root", 
+            "text": "Absolute Path to the framework root, with directory separator at end", 
+            "title": "ROOT"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/#system", 
+            "text": "Absolute Path to the System Directory, with directory separator at end", 
+            "title": "SYSTEM"
+        }, 
+        {
+            "location": "/saika-core/reserved-constants/#app", 
+            "text": "Absolute Path to the Application Directory, with directory separator at end", 
+            "title": "APP"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/", 
+            "text": "Just like other frameworks, Saika has some reserved functions. Saika's core functions are located in \nsystem/core/Functions.php\n. The file loads when Saika boots up. Also Saika uses the functions in it's core classes. So, you can't replace the core functions.\n\n\nSaika's Reserved Functions\n\n\nsaika_detect_url()\n\n\n\n\nDetects site URL\n\n\n@return string\n\n\n\n\nsite_url($path)\n\n\n\n\nQuick access the Site URL\n\n\n@param string $path (Optional) The path\n\n\n@return string\n\n\n\n\nload_helper($helper_file_name)\n\n\n\n\nLoad user's custom defined functions aka helpers\n\n\n@param string $helper_file_name The helper file name ( without .php )\n\n\n@return\n\n\n\n\nget_random_string($length = 10, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTWXYZ')\n\n\n\n\nGet a random string. Not secure! Just a random string!\n\n\n@param integer $length The length of the string\n\n\n@param string  $keyspace  The characters to use, Default is: 0-9-A-z\n\n\n@return string\n\n\n\n\nget_secure_token($length = 20)\n\n\n\n\nGenerate a cryptographically secure random token\n\n\n@param integer $length The length of token ( may differ because it will be converted to hex )\n\n\n@return string\n\n\n\n\nget_current_url()\n\n\n\n\nGet current URL\n\n\n@return string\n\n\n\n\nsaika_url_slug($str, array $options = array())\n\n\n\n\nGenerate SEO friendly URL slug from string. With Unicode support.\n\n\n@param string $str     The string\n\n\n@param array  $options The options as array, the option keys are:\n\n\ndelimiter : URL delimiter, default is \"-\"\n\n\nlimit : how long the slug could be? default is \"null\"\n\n\nlowercase : whether to convert it to lowercase or not\n\n\nreplacements : custom replacements, as key =\n val array\n\n\ntransliterate : Transliterate characters to ASCII or not", 
+            "title": "Reserved Functions"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#saikas-reserved-functions", 
+            "text": "", 
+            "title": "Saika's Reserved Functions"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#saika_detect_url", 
+            "text": "Detects site URL  @return string", 
+            "title": "saika_detect_url()"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#site_urlpath", 
+            "text": "Quick access the Site URL  @param string $path (Optional) The path  @return string", 
+            "title": "site_url($path)"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#load_helperhelper_file_name", 
+            "text": "Load user's custom defined functions aka helpers  @param string $helper_file_name The helper file name ( without .php )  @return", 
+            "title": "load_helper($helper_file_name)"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#get_random_stringlength-10-keyspace-0123456789abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstwxyz", 
+            "text": "Get a random string. Not secure! Just a random string!  @param integer $length The length of the string  @param string  $keyspace  The characters to use, Default is: 0-9-A-z  @return string", 
+            "title": "get_random_string($length = 10, $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTWXYZ')"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#get_secure_tokenlength-20", 
+            "text": "Generate a cryptographically secure random token  @param integer $length The length of token ( may differ because it will be converted to hex )  @return string", 
+            "title": "get_secure_token($length = 20)"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#get_current_url", 
+            "text": "Get current URL  @return string", 
+            "title": "get_current_url()"
+        }, 
+        {
+            "location": "/saika-core/reserved-functions/#saika_url_slugstr-array-options-array", 
+            "text": "Generate SEO friendly URL slug from string. With Unicode support.  @param string $str     The string  @param array  $options The options as array, the option keys are:  delimiter : URL delimiter, default is \"-\"  limit : how long the slug could be? default is \"null\"  lowercase : whether to convert it to lowercase or not  replacements : custom replacements, as key =  val array  transliterate : Transliterate characters to ASCII or not", 
+            "title": "saika_url_slug($str, array $options = array())"
+        }, 
+        {
+            "location": "/saika-core/controllers/", 
+            "text": "What is a Controller?\n\n\nIf you have already read \nHow Saika Works\n then you should know what Controller is. A controller is basically an extended class of Saika's core class \nController\n. A controller is a place where you will process client request, validate data, use logic, handle database related tasks using the \nModels\n and show output to the client using  the \nViews\n and so on...\nSaika's core \nController\n class is located at \nsystem/core/Controller.php\n. All of your controllers \nMUST\n extend this class. You have to place your controllers in \napp/controllers/\n\n\nController Structure\n\n\nNaming the Controller\n\n\n\n\nYou should know already when a user requests \nhttp://example.com/videos/\n Saika will look for the controller named \nVideosController.php\n. \n\n\nA controller should follow PSR-4 naming convention aka \nPascalCase\n.  So, the controller's name and the file name \nMUST\n be the same. For example, if your controller name is \nVideosController\n then the file name must be \nVideosController.php\n. \n\n\nController Code Structure\n\n\nHere is the basic controller structure. Like I said previously, first of all, it should extend the base \nController\n class. Then in the class constructor, it must call \nparent::__construct()\n to construct the base controller.\n\n\n?php\n\n\nclass\n \nIndexController\n \nextends\n \nController\n\n\n{\n\n    \n/**\n\n\n     * Construct this object by extending the base Controller class\n\n\n     */\n\n    \npublic\n \nfunction\n \n__construct\n()\n\n    \n{\n\n        \nparent\n::\n__construct\n();\n\n    \n}\n\n\n    \npublic\n \nfunction\n \nlogin\n()\n\n    \n{\n\n         \n// Show a login page here maybe!\n\n    \n}\n\n\n    \n/**\n\n\n    * This method will map to the URL http://example.com/index/contact-us\n\n\n    * If $_config[\nTRANSLATE_HYPHENS\n] is set to TRUE\n\n\n    */\n\n    \npublic\n \nfunction\n \ncontact_us\n()\n\n    \n{\n\n\n    \n}\n\n\n \n}\n\n\n\n\n\n\nController Actions\n\n\nAn action is a Controller method name which is \npublic\nly accessible and NOT \nstatic\n or \nmagic\n method. Assume the user has requested this URL:\n\n\nhttp://example.com/index/login\n\n\nHere, \nindex\n is the slug of the controller \nIndexController\n and \nlogin\n is the action name.  So it will call \nIndexController::login()\n.\n\n\nSaika doesn't force naming conventions for controller actions aka method names. But recommends using underscores as method name separator. Because, it will be useful to create SEO friendly URLs. \n\n\nAs \nGoogle recommends\n, dash/hyphens SHOULD be used as separator in URL. But you can't use hyphens in method name because it's not valid method name character and will raise a fatal PHP parse error. So, you \nCAN'T\n name your controller action like this:\n\n\n// Invalid, will generate fatal parse error\n\n\npublic function contact-us()\n\n\n{\n\n\n}\n\n\n\n\n\n\nBut you surely can do this:\n\n\npublic function contact_us()\n\n\n{\n\n\n}\n\n\n\n\n\n\nAnd set \n$_config['TRANSLATE_HYPHENS']\n to \nTRUE\n. Then whenever a user will navigate to the URL \nhttp://example.com/index/contact-us\n Saika will convert the action name \"contact-us\" to \"\ncontact_us\n\", as a result \nIndexController::contact_us()\n will be called.\n\n\nDefault Action\n\n\nA default action is the default controller method name to call when no other action is passed. Lets take this URL as an example:\n\nhttp://example.com/videos\n\nSee? No action passed. Then Saika will look for a action name specified via \n$_config['DEFAULT_ACTION']\n and call it. By default it is set to \nindex\n. So \nVideosController::index()\n will be called.\n\n\nArguments/URL Parameters\n\n\nURL parameters are used to pass data to the Controller via the \nGET\n method. Here is how it works. Let's say we have a method in \nIndexController\n like this.\n\n\npublic function video($id, $name)\n\n\n{\n\n\n    echo \nVideo ID:\nbr\n;\n\n\n    echo (int)$id;\n\n\n    echo \nbr\nVideo Name:\nbr\n;\n\n\n     echo strip_tags($name);\n\n\n}\n\n\n\n\n\n\nNow you can navigate to the URL:\n\n\nhttp://example.com/index/video/12/Lorem-Ipsum\n\n\n\n\n\nHere \n12\n will be passed as \n$id\n and \nLorem-Ipsum\n as \n$name\n to the method. Just like this you can have as many parameters you want.", 
+            "title": "Controllers"
+        }, 
+        {
+            "location": "/saika-core/controllers/#what-is-a-controller", 
+            "text": "If you have already read  How Saika Works  then you should know what Controller is. A controller is basically an extended class of Saika's core class  Controller . A controller is a place where you will process client request, validate data, use logic, handle database related tasks using the  Models  and show output to the client using  the  Views  and so on...\nSaika's core  Controller  class is located at  system/core/Controller.php . All of your controllers  MUST  extend this class. You have to place your controllers in  app/controllers/", 
+            "title": "What is a Controller?"
+        }, 
+        {
+            "location": "/saika-core/controllers/#controller-structure", 
+            "text": "", 
+            "title": "Controller Structure"
+        }, 
+        {
+            "location": "/saika-core/controllers/#naming-the-controller", 
+            "text": "You should know already when a user requests  http://example.com/videos/  Saika will look for the controller named  VideosController.php .   A controller should follow PSR-4 naming convention aka  PascalCase .  So, the controller's name and the file name  MUST  be the same. For example, if your controller name is  VideosController  then the file name must be  VideosController.php .", 
+            "title": "Naming the Controller"
+        }, 
+        {
+            "location": "/saika-core/controllers/#controller-code-structure", 
+            "text": "Here is the basic controller structure. Like I said previously, first of all, it should extend the base  Controller  class. Then in the class constructor, it must call  parent::__construct()  to construct the base controller.  ?php  class   IndexController   extends   Controller  { \n     /**       * Construct this object by extending the base Controller class       */ \n     public   function   __construct () \n     { \n         parent :: __construct (); \n     } \n\n     public   function   login () \n     { \n          // Show a login page here maybe! \n     } \n\n     /**      * This method will map to the URL http://example.com/index/contact-us      * If $_config[ TRANSLATE_HYPHENS ] is set to TRUE      */ \n     public   function   contact_us () \n     { \n\n     } \n\n  }", 
+            "title": "Controller Code Structure"
+        }, 
+        {
+            "location": "/saika-core/controllers/#controller-actions", 
+            "text": "An action is a Controller method name which is  public ly accessible and NOT  static  or  magic  method. Assume the user has requested this URL:  http://example.com/index/login  Here,  index  is the slug of the controller  IndexController  and  login  is the action name.  So it will call  IndexController::login() .  Saika doesn't force naming conventions for controller actions aka method names. But recommends using underscores as method name separator. Because, it will be useful to create SEO friendly URLs.   As  Google recommends , dash/hyphens SHOULD be used as separator in URL. But you can't use hyphens in method name because it's not valid method name character and will raise a fatal PHP parse error. So, you  CAN'T  name your controller action like this:  // Invalid, will generate fatal parse error  public function contact-us()  {  }   But you surely can do this:  public function contact_us()  {  }   And set  $_config['TRANSLATE_HYPHENS']  to  TRUE . Then whenever a user will navigate to the URL  http://example.com/index/contact-us  Saika will convert the action name \"contact-us\" to \" contact_us \", as a result  IndexController::contact_us()  will be called.", 
+            "title": "Controller Actions"
+        }, 
+        {
+            "location": "/saika-core/controllers/#default-action", 
+            "text": "A default action is the default controller method name to call when no other action is passed. Lets take this URL as an example: http://example.com/videos \nSee? No action passed. Then Saika will look for a action name specified via  $_config['DEFAULT_ACTION']  and call it. By default it is set to  index . So  VideosController::index()  will be called.", 
+            "title": "Default Action"
+        }, 
+        {
+            "location": "/saika-core/controllers/#argumentsurl-parameters", 
+            "text": "URL parameters are used to pass data to the Controller via the  GET  method. Here is how it works. Let's say we have a method in  IndexController  like this.  public function video($id, $name)  {      echo  Video ID: br ;      echo (int)$id;      echo  br Video Name: br ;       echo strip_tags($name);  }   Now you can navigate to the URL:  http://example.com/index/video/12/Lorem-Ipsum  Here  12  will be passed as  $id  and  Lorem-Ipsum  as  $name  to the method. Just like this you can have as many parameters you want.", 
+            "title": "Arguments/URL Parameters"
+        }, 
+        {
+            "location": "/saika-core/models/", 
+            "text": "Models are the place where you perform all the database related tasks. This includes but not limited to insert, edit, delete database values. You need to put all your models in \napp/models\n directory.\n\n\nModel Structure\n\n\nNaming the Model\n\n\nAs we previously told, Saika uses PSR-4 naming standards for class names. So your model class name should be in \nPascalCase\n. So it can be autoloaded when you call the class. You don't need to \nrequire\n or \ninclude\n them manually.\nAs an example, a Model class name could be:\n\n\nSampleModel.php\n\n\n\n\n\nModel Code Structure\n\n\nUnlike most of the other MVC frameworks Saika doesn't have a core \nModel\n class. Because Saika uses singleton pattern for database object. So you actually don't need to extend any class when writing your Model class.\nA sample Model code could be this:\n\n\n?php\n\n\n/**\n\n\n* A damn simple demo model!\n\n\n*\n\n\n*/\n\n\nclass\n \nSampleModel\n\n\n{\n\n\n    \npublic\n \nstatic\n \nfunction\n \naddPerson\n(\n$name\n,\n \n$age\n)\n\n    \n{\n\n        \n// Get the database instance from DbFactory\n\n        \n$db\n \n=\n \nDbFactory\n::\ngetFactory\n()\n-\ngetConn\n();\n\n        \n// See? Pure PDO, nothing else!\n\n        \n$sql\n \n=\n \nINSERT INTO `saika_demo` (name, age) VALUES (:name, :age)\n;\n\n        \n$query\n \n=\n \n$db\n-\nprepare\n(\n$sql\n);\n\n        \n$params\n \n=\n \narray\n(\n:name\n \n=\n \n$name\n,\n \n:age\n \n=\n \n$age\n);\n\n        \nreturn\n \n$query\n-\nexecute\n(\n$params\n);\n\n    \n}\n\n\n}\n\n\n\n\n\n\nNow in your controller you can use this model just by calling \nSampleModel::addPerson('John Doe', 29);\n.\n\n\nGetting the DB connection\n\n\nSaika uses singleton pattern for database connection. Which only connects to the database when you really need it. To get the database connection inside your model use \nDbFactory::getFactory()-\ngetConn();\n which returns a PDO object. You can set the database details via the \nconfig file\n.", 
+            "title": "Models"
+        }, 
+        {
+            "location": "/saika-core/models/#model-structure", 
+            "text": "", 
+            "title": "Model Structure"
+        }, 
+        {
+            "location": "/saika-core/models/#naming-the-model", 
+            "text": "As we previously told, Saika uses PSR-4 naming standards for class names. So your model class name should be in  PascalCase . So it can be autoloaded when you call the class. You don't need to  require  or  include  them manually.\nAs an example, a Model class name could be:  SampleModel.php", 
+            "title": "Naming the Model"
+        }, 
+        {
+            "location": "/saika-core/models/#model-code-structure", 
+            "text": "Unlike most of the other MVC frameworks Saika doesn't have a core  Model  class. Because Saika uses singleton pattern for database object. So you actually don't need to extend any class when writing your Model class.\nA sample Model code could be this:  ?php  /**  * A damn simple demo model!  *  */  class   SampleModel  { \n\n     public   static   function   addPerson ( $name ,   $age ) \n     { \n         // Get the database instance from DbFactory \n         $db   =   DbFactory :: getFactory () - getConn (); \n         // See? Pure PDO, nothing else! \n         $sql   =   INSERT INTO `saika_demo` (name, age) VALUES (:name, :age) ; \n         $query   =   $db - prepare ( $sql ); \n         $params   =   array ( :name   =   $name ,   :age   =   $age ); \n         return   $query - execute ( $params ); \n     }  }   Now in your controller you can use this model just by calling  SampleModel::addPerson('John Doe', 29); .", 
+            "title": "Model Code Structure"
+        }, 
+        {
+            "location": "/saika-core/models/#getting-the-db-connection", 
+            "text": "Saika uses singleton pattern for database connection. Which only connects to the database when you really need it. To get the database connection inside your model use  DbFactory::getFactory()- getConn();  which returns a PDO object. You can set the database details via the  config file .", 
+            "title": "Getting the DB connection"
+        }, 
+        {
+            "location": "/saika-core/views/", 
+            "text": "Views are used to show output to the client. Saika uses a native PHP view class instead of using replacement heavy templating engines. You can know more about the class in, Saika's class reference section.\nBy default, you have to place all your views inside \napp/views\n directory.\n\n\nUsing Views\n\n\nViews are rendered inside controller. When constructing the base controller class \nController\n, a \nView\n object is created and stored in variable \n$view\n. So you can access the view object inside the controller by using \n$this-\nview\n.\nLet's take an example. Assume we are rendering a view inside \nIndexController::index()\n.\n\n\n    public function index()\n\n\n    {\n\n\n        // To assign multiple variable you can use this\n\n\n        $this-\nview-\nassignMulti([\nage\n =\n \n30\n, \ngender\n =\n \nMale\n]);\n\n\n\n        // To assign a single variable you can use this\n\n\n        $this-\nview-\nassign(\nname\n, \nJohn Doe\n);\n\n\n        s\n\n\n        // You can also assign variables when rendering the view\n\n\n        $this-\nview-\nrender(\nhome/index\n, [\ntitle\n =\n \nSaika\n, \n\n\n        \ndesc\n =\n \nA demo desc\n]);\n\n\n    }\n\n\n\n\n\n\nThe code above will render the view located in \napp/views/index.php\n.\nAs you may have noticed, you don't need to include the .php extension when rendering the view. Saika will automatically append them.\nThen in the view file you can show the data to the user. Something like this:\n\n\nName: \n?\n=\n$name\n?\nbr/\n\n\nAge: \n?\n=\n$age\n?\nbr/\n\n\nGender: \n?\n=\n$gender\n?\n\n\n\n\n\n\n\n\nNote\n\n\nDon't forget to escape the data before rendering.", 
+            "title": "Views"
+        }, 
+        {
+            "location": "/saika-core/views/#using-views", 
+            "text": "Views are rendered inside controller. When constructing the base controller class  Controller , a  View  object is created and stored in variable  $view . So you can access the view object inside the controller by using  $this- view .\nLet's take an example. Assume we are rendering a view inside  IndexController::index() .      public function index()      {          // To assign multiple variable you can use this          $this- view- assignMulti([ age  =   30 ,  gender  =   Male ]);          // To assign a single variable you can use this          $this- view- assign( name ,  John Doe );          s          // You can also assign variables when rendering the view          $this- view- render( home/index , [ title  =   Saika ,            desc  =   A demo desc ]);      }   The code above will render the view located in  app/views/index.php .\nAs you may have noticed, you don't need to include the .php extension when rendering the view. Saika will automatically append them.\nThen in the view file you can show the data to the user. Something like this:  Name:  ? = $name ? br/  Age:  ? = $age ? br/  Gender:  ? = $gender ?    Note  Don't forget to escape the data before rendering.", 
+            "title": "Using Views"
+        }, 
+        {
+            "location": "/saika-core/helpers/", 
+            "text": "Helpers are the files that contains custom user defined functions. Off course you can define your custom functions in other files and include them in your code. But Saika's \nhelpers\n allows you to autoload them or loading them on demand. You have to place your controllers in \napp/helpers/\n directory.\n\n\nSample Helper Structure\n\n\nThere is no strict structure for helper files. However, we recommend that you follow PSR standards.\n\n\nA demo helper could be like this:\n\n\napp/helpers/\nDemoHelper.php\n\n\n?php\n\n\n\n/**\n\n\n * Write your custom functions here\n\n\n */\n\n\n\nfunction\n \nhowdy\n()\n\n\n{\n\n    \necho\n \nHowdy Watson!\n;\n\n\n}\n\n\n\n\n\n\n\n\nTip\n\n\nIt is recommended that you use \nfunction_exists()\n while declaring functions to avoid any conflicts.\n\n\n\n\nLoading Helpers\n\n\nYou can load a helper any where in your code by using the function \nload_helper()\n. The function takes a helper file name without the .php extension as it's only argument. A sample usage:\n\n\n?php\n\n\nclass\n \nIndexController\n \nextends\n \nController\n\n\n{\n\n    \n/**\n\n\n     * Construct this object by extending the base Controller class\n\n\n     */\n\n    \npublic\n \nfunction\n \n__construct\n()\n\n    \n{\n\n        \nparent\n::\n__construct\n();\n\n        \n// The file app/helpers/DemoHelper.php will be loaded\n\n        \nload_helper\n(\nDemoHelper\n);\n\n    \n}\n\n\n\n\n\n\nHowever, it's also possible to autoload some ( or all of 'em ) helpers when Saika boots up. To do this you have to set the configuration value \n$_config['AUTOLOAD_HELPERS']\n with name of Helper files without extension (.php) as array. Ex. \n['DemoHelper', 'UrlHelpers']", 
+            "title": "Helpers"
+        }, 
+        {
+            "location": "/saika-core/helpers/#sample-helper-structure", 
+            "text": "There is no strict structure for helper files. However, we recommend that you follow PSR standards.  A demo helper could be like this:  app/helpers/ DemoHelper.php  ?php  /**   * Write your custom functions here   */  function   howdy ()  { \n     echo   Howdy Watson! ;  }    Tip  It is recommended that you use  function_exists()  while declaring functions to avoid any conflicts.", 
+            "title": "Sample Helper Structure"
+        }, 
+        {
+            "location": "/saika-core/helpers/#loading-helpers", 
+            "text": "You can load a helper any where in your code by using the function  load_helper() . The function takes a helper file name without the .php extension as it's only argument. A sample usage:  ?php  class   IndexController   extends   Controller  { \n     /**       * Construct this object by extending the base Controller class       */ \n     public   function   __construct () \n     { \n         parent :: __construct (); \n         // The file app/helpers/DemoHelper.php will be loaded \n         load_helper ( DemoHelper ); \n     }   However, it's also possible to autoload some ( or all of 'em ) helpers when Saika boots up. To do this you have to set the configuration value  $_config['AUTOLOAD_HELPERS']  with name of Helper files without extension (.php) as array. Ex.  ['DemoHelper', 'UrlHelpers']", 
+            "title": "Loading Helpers"
+        }, 
+        {
+            "location": "/class-reference/", 
+            "text": "Class references will be added soon. Saika's code is well-commented please explore the original codes till then!", 
+            "title": "Class Reference"
+        }
+    ]
+}
