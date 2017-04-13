@@ -1,5 +1,9 @@
 ## Saika - The PHP Framework for KIDS!
-
+[![GitHub issues](https://img.shields.io/github/issues/mirazmac/Saika.svg)](https://github.com/mirazmac/Saika/issues)
+[![GitHub forks](https://img.shields.io/github/forks/mirazmac/Saika.svg)](https://github.com/mirazmac/Saika/network)
+[![GitHub stars](https://img.shields.io/github/stars/mirazmac/Saika.svg)](https://github.com/mirazmac/Saika/stargazers)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mirazmac/Saika/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/mirazmac/Saika.svg?style=social)](https://twitter.com/intent/tweet?text=The PHP Framework for KIDS&url=https://github.com/mirazmac/Saika)
 ##### WTF Miraz! A noob like you writing PHP framework? Is this a joke buddy?
 Well, pardon me, masters. But this framework is for PHP kids like me. If you are a supreme developer, king of kings, mighty coder... you should stay away master!
 
@@ -38,7 +42,7 @@ And that's, not all your honor! :D
 #####  What does Saika mean anyway?
 Saika is my sister's name <3
 
-Still got questions? Just checkout the documentation.
+Still got questions? Just checkout the [documentation](https://mirazmac.github.io/Saika/ "").
 
 ### Todos
 * @todo Add namespace support
