@@ -1,0 +1,27 @@
+{
+    "name": "mirazmac/saika",
+    "type": "project",
+    "description": "The PHP Framework for KIDS!",
+    "keywords": ["mvc", "php", "framework"],
+    "homepage": "https://github.com/mirazmac/Saika",
+    "license": "MIT",
+    "authors": [
+    {
+        "name": "Miraz Mac",
+        "email": "mirazmac@gmail.com",
+        "homepage": "https://mirazmac.info",
+        "role": "Developer"
+    }
+    ],
+    "require-dev": {
+        "php": ">=5.4.0"
+        },
+        "autoload": {
+            "psr-4": { "": ["system/core/", "app/models/", "app/helpers/", "app/libraries"] }
+            },
+            "require": {
+                "ircmaxell/password-compat": "^1.0",
+                "symfony/polyfill-mbstring": "^1.3",
+                "symfony/polyfill-php56": "^1.3"
+            }
+        }

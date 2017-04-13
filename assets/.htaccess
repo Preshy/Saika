@@ -1,0 +1,3 @@
+## Block every kind of script execution in this directory
+RemoveType .pl .cgi .php .php3 .php4 .php5 .xml .phtml .phtm .html .htm .wml .shtm .shtml .asp
+RemoveHandler .pl .cgi .php .php3 .php4 .php5 .xml .phtml .phtm .html .htm .wml .shtm .shtml .asp
